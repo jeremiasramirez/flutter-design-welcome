@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:welcome_app/pages/slide_1.page.dart';
+import 'package:welcome_app/pages/slide_2.page.dart';
  
 
 void main() {
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
       color:Colors.red,
       debugShowCheckedModeBanner: false,
       home: PageView(
-         
+        physics:BouncingScrollPhysics(),
         scrollDirection: Axis.vertical,
         children: [
           slide_1(),
